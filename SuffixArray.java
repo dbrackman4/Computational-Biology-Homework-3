@@ -11,14 +11,14 @@ import java.util.Arrays;
  * @author Drew Brackman
  */
 public class SuffixArray {
-    private String s;
+    private String s;   //DNA sequence
     private String[] strings;
     private int[] SA;
     private int n;
     
     public SuffixArray(String s)
     {
-        this.s = s + "$";
+        this.s = s + "$";       //append $ to the DNA sequence
         n = this.s.length();
         SA = new int[n];
         strings = new String[n];
